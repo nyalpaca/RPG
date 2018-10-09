@@ -1,16 +1,20 @@
 
 public class intro {
-	
+
 	public static void main(String[] args) {
-		Chara a = new Chara(100, 30, "勇者");
-		a.speak();
-		
-		Chara b = new Chara(40, 100, "魔術師");
-		b.speak();
-		
-		Chara c = new Chara(10, 10, "一般人");
-		c.speak();
-		
+		Chara a = new Chara(10, 0, 5, "モンスター");
+		a.introduce();
+
+		Chara b = new Chara(40, 100, 15, "魔術師");
+		b.introduce();
+
+		Chara c = new Chara(100, 20, 10, "勇者");
+		c.introduce();
+		c.damage(5);
+		c.attack(a);
+
+
+
 	}
 
 }
